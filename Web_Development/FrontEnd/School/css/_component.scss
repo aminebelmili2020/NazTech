@@ -1,0 +1,45 @@
+.main-btn {
+    min-width: 100px;
+    height: 40px;
+    background: transparent;
+    color: black;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 10px;
+    border-top: 1px solid black;
+    border-left: 5px solid black;
+    border-right: 1px solid black;
+    border-bottom: 5px solid black;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+
+    &:hover {
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+
+    & a:hover {
+        text-decoration: none;
+    }
+
+}
+
+.fakeBtn {
+    height: 40px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: $pink;
+    border: 1px solid $bedge;
+
+    &:hover {
+
+        background-color: $bedge;
+        border: 1px solid $pink;
+    }
+}

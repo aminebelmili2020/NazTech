@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+li,
+a {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: black;
+        text-decoration: underline 1px black;
+    }
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+
+img {
+    min-width: 300px;
+}
+
+.navbar-brand {
+    cursor: pointer;
+
+    img {
+        min-width: 100%;
+    }
+}

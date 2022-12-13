@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.min.css">
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="shortcut icon" href="img/icon.svg" type="image/x-icon">
+
+    <title>MIKI academi</title>
+</head>
+<body>
+    
+    <header>
+        <!-- Start navigationBar -->
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="img/LOGO.png" alt="Brand School">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link p-lg-3 active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link p-lg-3 dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Courses
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Front-End Development</a></li>
+                      <li><a class="dropdown-item" href="#">Back-End Development</a></li>
+                      <li><a class="dropdown-item" href="#">GUI Development</a></li>
+                      <li><a class="dropdown-item" href="#">Artificial Intelligence</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">computer science</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-lg-3" href="#why">Free Lessons</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link p-lg-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Plans
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Basic</a></li>
+                      <li><a class="dropdown-item" href="#">Standard</a></li>
+                      <li><a class="dropdown-item" href="#">Premium</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-lg-3" href="#how">Videos</a>
+                  </li>
+                  </li>
+                </ul>
+                <div class="search ps-3 pe-3 d-none d-lg-block">
+                  <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">                        
+                        <div class="modal-body myModal">
+                          <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-primary" type="submit">Search</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                                  <!-- Button trigger LOGIN -->
+                  <button type="button" class="main-btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Log in
+                  </button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body signinModel">
+
+                          <ul class="nav nav-tabs " id="myTab" role="tablist">
+
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#login-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">LOGIN</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#signin-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">SIGNIN</button>
+                            </li>
+                            
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="login-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                              
+                              <form>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@domain.com" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                              </form>
+                              
+                            </div>
+                            <div class="tab-pane fade" id="signin-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                              
+                              <form>
+
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@domain.com" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                  <label for="exampleInputPassword1" class="form-label">Re-Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                
+                              </form>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+              </div>
+            </div>
+          </nav>
+          <!-- End navigationBar -->
+          
+          <!-- Start Contents -->
+          <section class=" container mainSection   ">
+            <div class="row pt-5 pb-5 d-flex ">
+              <div class="leftSide col-6">
+                <h1 class="fa-4x">Digital <i class="fa-solid fa-arrow-right"></i> Learning  <i class="fa-solid fa-face-grin-stars"></i> 
+                At It's Best For Children</h1>
+                <p>
+                  Modern Education Methods, improving Knowledge and reaching new heights.
+                </p>
+                <div class="row">
+                  <a class="main-btn col-5" col href="#how2"> Get Started </a>
+                  <a class="fakeBtn col-6" href="#"> Or Find Out More </a>  
+                  </li>
+                </div>
+              </div>
+              <div class="rightSide col-5">
+                <img src="img/img1.svg" alt="img">
+              </div>
+
+            </div>
+          </section>
+
+    </header>
+
+          <!-- Start why -->
+          <section id="why" class="_why container mainSection">
+            <div class="row d-flex ">
+              <div class="col-6 ">
+                <img src="img/img2.svg" alt="img">
+              </div>
+              <div class="col-6 pt-5  pb-5 ">
+                <h1 class="fa-4x fw-bold">Why Should Children Learn Professions<i class="fa-solid fa-circle-question"></i>
+                </h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quis itaque earum, dolor animi quidem, consequuntur sed recusandae explicabo veritatis voluptas maxime dolore cum? Accusamus odit consequatur dignissimos sint animi?</p>
+              </div>
+
+            </div>
+          </section>
+
+          <section class="courses" >
+            <h2 class="text-center fw-bold">Our Courses</h2>
+            <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">UiUx</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">FrontEnd</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">BackEnd</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+                <section id="UiUx" class="_how2 container mainSection">
+                  <div class="row d-flex ">
+                    
+                    <div class="col-6 ">
+                      <img src="img/img3.svg" alt="img">
+                    </div>
+                    <div class="col-6 pt-5  pb-5 ">
+                      <h1 class="fa-4x fw-bold">Why Should Children Learn Professions<i class="fa-solid fa-circle-question"></i>
+                      </h1>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quis itaque earum, dolor animi quidem, consequuntur sed recusandae explicabo veritatis voluptas maxime dolore cum? Accusamus odit consequatur dignissimos sint animi?</p>
+                    </div>
+      
+                  </div>
+                </section>
+
+
+
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <section id="FrontEnd" class="_how2 container mainSection">
+                  <div class="row d-flex ">
+                    
+                    <div class="col-6 ">
+                      <img src="img/img3.svg" alt="img">
+                    </div>
+                    <div class="col-6 pt-5  pb-5 ">
+                      <h1 class="fa-4x fw-bold">Why Should Children Learn Professions<i class="fa-solid fa-circle-question"></i>
+                      </h1>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quis itaque earum, dolor animi quidem, consequuntur sed recusandae explicabo veritatis voluptas maxime dolore cum? Accusamus odit consequatur dignissimos sint animi?</p>
+                    </div>
+      
+                  </div>
+                </section>
+              </div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                <section id="BackEnd" class="_how2 container mainSection">
+                  <div class="row d-flex ">
+                    
+                    <div class="col-6 ">
+                      <img src="img/img3.svg" alt="img">
+                    </div>
+                    <div class="col-6 pt-5  pb-5 ">
+                      <h1 class="fa-4x fw-bold">Why Should Children Learn Professions<i class="fa-solid fa-circle-question"></i>
+                      </h1>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quis itaque earum, dolor animi quidem, consequuntur sed recusandae explicabo veritatis voluptas maxime dolore cum? Accusamus odit consequatur dignissimos sint animi?</p>
+                    </div>
+      
+                  </div>
+                </section>
+              </div>
+            </div>
+          </section>
+          <!-- Start how -->
+          <section id="how" class="_how container mainSection">
+            <div class="row d-flex ">
+              <div class="col-6 pt-5  pb-5 ">
+                <h1 class="fa-4x fw-bold">Why Should Children Learn Professions<i class="fa-solid fa-circle-question"></i>
+                </h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quis itaque earum, dolor animi quidem, consequuntur sed recusandae explicabo veritatis voluptas maxime dolore cum? Accusamus odit consequatur dignissimos sint animi?</p>
+              </div>
+              <div class="col-6 ">
+                <img src="img/img4.svg" alt="img">
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Start confucius -->
+          <section id="confucius" class="_confucius mainSection">
+            <div class="d-flex container">
+              <div class="text-center pt-5  pb-5 ">
+                <h1 class="fa-2x fw-bold">Why Should Children Learn Professions<i class="fa-solid fa-circle-question"></i>
+                </h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quis itaque earum, dolor animi quidem, consequuntur sed recusandae explicabo veritatis voluptas maxime dolore cum? Accusamus odit consequatur dignissimos sint animi?</p>
+              </div>
+
+            </div>
+          </section>
+          <!-- Start how2 -->
+          <section id="how2" class="_how2 container mainSection">
+            <div class="row d-flex ">
+              <div class="col-6 pt-5  pb-5 ">
+                <h1 class="fa-4x fw-bold">Why Should Children Learn Professions<i class="fa-solid fa-circle-question"></i>
+                </h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quis itaque earum, dolor animi quidem, consequuntur sed recusandae explicabo veritatis voluptas maxime dolore cum? Accusamus odit consequatur dignissimos sint animi?</p>
+              </div>
+              <div class="col-6 ">
+                <img src="img/img2.svg" alt="img">
+              </div>
+
+            </div>
+          </section>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/fontAwesome.min.js.js"></script>
+    <script src="js/myScripts.js"></script>
+</body>
+</html>

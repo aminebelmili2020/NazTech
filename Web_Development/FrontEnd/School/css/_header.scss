@@ -1,0 +1,28 @@
+header {
+    background-color: $pink-light;
+    height: calc(100vh);
+}
+
+
+.signinModel {
+    & .nav-tabs {
+        border-bottom: none;
+
+        & .nav-link {
+            width: 100%;
+            color: black;
+            transition: none;
+
+            &.active {
+                color: $pink;
+                font-weight: bold;
+            }
+        }
+
+        & .nav-item {
+            width: 50%;
+
+            margin-bottom: 2rem;
+        }
+    }
+}
