@@ -1,0 +1,40 @@
+.how{
+
+    .btnO{
+        height: 100px;
+        border-radius: 50%;
+        background-color: $bedge;
+        position: absolute;
+        z-index: 10;
+        color: white;
+        font-weight: bold;
+        font-size: 2em;
+        padding: 5px;
+    }
+    .path{
+        width: 750px;
+        margin-top: 42px;
+        margin-left: 52px;
+        position: absolute;
+        z-index: 1;
+    
+    }
+    .content{
+        width: 275px;
+        h3{
+            font-weight: bold;
+            padding-top: 130px;
+        }
+
+    }
+    .One{
+        h3{
+            
+            padding-top: 180px;
+        }
+    }
+    .Tow{
+        margin-top: 150px;
+    }
+    
+}
