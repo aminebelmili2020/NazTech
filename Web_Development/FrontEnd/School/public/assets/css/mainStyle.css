@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+li,
+a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: black;
+  text-decoration: underline 1px black;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+img {
+  min-width: 300px;
+}
+
+.navbar-brand {
+  cursor: pointer;
+}
+.navbar-brand img {
+  min-width: 100%;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+.main-btn {
+  min-width: 100px;
+  height: 40px;
+  background: transparent;
+  color: black;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 10px;
+  border-top: 1px solid black;
+  border-left: 5px solid black;
+  border-right: 1px solid black;
+  border-bottom: 5px solid black;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+.main-btn:hover {
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.main-btn a:hover {
+  text-decoration: none;
+}
+
+.fakeBtn {
+  height: 40px;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #F4A795;
+  border: 1px solid #ecb98a;
+}
+.btn-primary:hover {
+  background-color: #ecb98a;
+  border: 1px solid #F4A795;
+}
+
+header {
+  background-color: #F2E1DD;
+  height: 100vh;
+}
+
+.signinModel .nav-tabs {
+  border-bottom: none;
+}
+.signinModel .nav-tabs .nav-link {
+  width: 100%;
+  color: black;
+  transition: none;
+}
+.signinModel .nav-tabs .nav-link.active {
+  color: #F4A795;
+  font-weight: bold;
+}
+.signinModel .nav-tabs .nav-item {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.how .btnO {
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ecb98a;
+  position: absolute;
+  z-index: 10;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 5px;
+}
+.how .path {
+  width: 750px;
+  margin-top: 42px;
+  margin-left: 52px;
+  position: absolute;
+  z-index: 1;
+}
+.how .content {
+  width: 275px;
+}
+.how .content h3 {
+  font-weight: bold;
+  padding-top: 130px;
+}
+.how .One h3 {
+  padding-top: 180px;
+}
+.how .Tow {
+  margin-top: 150px;
+}
+
+.courses .nav-pills .nav-link.active,
+.courses .nav-pills .show > .nav-link,
+.courses .tab-content > .active {
+  background-color: #ecb98a;
+}
+.courses .nav-pills .nav-link,
+.courses .nav-pills .nav-link.active {
+  border-radius: 30px 30px 0 0;
+}
+.courses .tab-content {
+  height: 500px;
+}
+
+._confucius {
+  background-color: #99d2f5;
+}
+
+footer img {
+  min-width: 150px;
+  width: 150px;
+}/*# sourceMappingURL=mainStyle.css.map */
